@@ -9,6 +9,18 @@
 
 ---
 
+### 🐍 Contribution snake / 贡献贪吃蛇
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" />
+    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" />
+  </picture>
+</p>
+
+---
+
 ### 🇬🇧 About me
 - 🎓 Computer Science at UNSW — bachelor's and master's, graduating Jan 2026.
 - 💼 Joining Hithink (同花顺) as a Frontend Engineer in Apr 2026.
@@ -26,29 +38,6 @@
 ---
 
 ### 📌 Featured projects / 精选项目
-
-<table>
-  <tr>
-    <td>
-      <a href="https://github.com/Haotian14/Deep-Learing">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Haotian14&repo=Deep-Learing&theme=tokyonight" alt="Deep-Learing" />
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/Haotian14/BlockChain">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Haotian14&repo=BlockChain&theme=tokyonight" alt="BlockChain" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/Haotian14/frontend-interview-notes">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Haotian14&repo=frontend-interview-notes&theme=tokyonight" alt="frontend-interview-notes" />
-      </a>
-    </td>
-    <td></td>
-  </tr>
-</table>
 
 - **[Deep-Learing](https://github.com/Haotian14/Deep-Learing)** — deep-learning notes & experiments / 深度学习笔记与实验
 - **[BlockChain](https://github.com/Haotian14/BlockChain)** — blockchain projects & study / 区块链项目与学习
@@ -73,14 +62,4 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Haotian14&show_icons=true&theme=tokyonight" alt="stats" height="165" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Haotian14&layout=compact&theme=tokyonight" alt="top langs" height="165" />
-</p>
-
-### 🐍 Contribution snake / 贡献贪吃蛇
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" />
-    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" />
-  </picture>
 </p>
