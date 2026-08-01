@@ -152,105 +152,138 @@ const themedSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="
     ${generatedContent}
   </g>
 
-  <g class="pixel-minato" transform="translate(150 218)" aria-label="Pixel-style yellow flash ninja">
-    <title>Minato Namikaze pixel sprite</title>
+  <g class="pixel-minato" transform="translate(150 218)" aria-label="Pixel-style Minato Namikaze in a dynamic running pose">
+    <title>Minato Namikaze — Yellow Flash pixel sprite</title>
     <g class="pixel-bob" shape-rendering="crispEdges">
-      <g class="pixel-spark" fill="#FACC15">
-        <rect x="-30" y="24" width="12" height="4" />
-        <rect x="-22" y="16" width="8" height="4" fill="#FDE047" />
-        <rect x="-18" y="34" width="10" height="4" fill="#F59E0B" />
-        <rect x="-10" y="8" width="5" height="5" fill="#FEF08A" />
+      <!-- Layered teleport streaks. -->
+      <g class="pixel-spark">
+        <rect x="-38" y="19" width="18" height="4" fill="#F59E0B" />
+        <rect x="-30" y="11" width="17" height="4" fill="#FEF08A" />
+        <rect x="-27" y="31" width="20" height="4" fill="#FACC15" />
+        <rect x="-14" y="4" width="8" height="4" fill="#FFF7AE" />
+        <rect x="-9" y="42" width="10" height="4" fill="#F97316" />
       </g>
 
-      <!-- Spiky blond hair and forehead protector. -->
-      <rect x="8" y="4" width="8" height="4" fill="#F59E0B" />
-      <rect x="16" y="0" width="8" height="5" fill="#FACC15" />
-      <rect x="24" y="3" width="8" height="4" fill="#FDE047" />
-      <rect x="32" y="6" width="8" height="5" fill="#F59E0B" />
-      <rect x="5" y="8" width="34" height="9" fill="#FACC15" />
-      <rect x="8" y="15" width="30" height="5" fill="#172554" />
-      <rect x="18" y="14" width="12" height="5" fill="#CBD5E1" />
-      <rect x="21" y="15" width="6" height="2" fill="#64748B" />
+      <!-- Sharper, windswept blond hair. -->
+      <rect x="7" y="7" width="7" height="5" fill="#D97706" />
+      <rect x="11" y="2" width="9" height="6" fill="#F59E0B" />
+      <rect x="19" y="0" width="8" height="7" fill="#FDE047" />
+      <rect x="27" y="3" width="9" height="5" fill="#FACC15" />
+      <rect x="35" y="6" width="9" height="6" fill="#F59E0B" />
+      <rect x="40" y="11" width="7" height="7" fill="#D97706" />
+      <rect x="8" y="8" width="35" height="12" fill="#FACC15" />
+      <rect x="12" y="8" width="18" height="4" fill="#FEF08A" />
 
-      <!-- Face. -->
-      <rect x="10" y="20" width="26" height="13" fill="#F2C6A5" />
-      <rect x="8" y="21" width="4" height="8" fill="#E8AF88" />
-      <rect x="34" y="21" width="4" height="8" fill="#E8AF88" />
-      <rect x="14" y="23" width="5" height="3" fill="#38BDF8" />
-      <rect x="28" y="23" width="5" height="3" fill="#38BDF8" />
-      <rect x="20" y="29" width="7" height="2" fill="#C97C6B" />
+      <!-- Forehead protector and handsome angular face. -->
+      <rect x="9" y="15" width="34" height="6" fill="#172554" />
+      <rect x="19" y="14" width="15" height="7" fill="#CBD5E1" />
+      <rect x="22" y="16" width="9" height="3" fill="#64748B" />
+      <rect x="13" y="21" width="28" height="13" fill="#F5C9A8" />
+      <rect x="10" y="22" width="5" height="8" fill="#E5A77F" />
+      <rect x="39" y="22" width="4" height="8" fill="#E5A77F" />
+      <rect x="14" y="20" width="6" height="5" fill="#FACC15" />
+      <rect x="35" y="20" width="6" height="5" fill="#EAB308" />
+      <rect x="17" y="25" width="7" height="2" fill="#0F172A" />
+      <rect x="31" y="25" width="7" height="2" fill="#0F172A" />
+      <rect x="19" y="25" width="4" height="3" fill="#38BDF8" />
+      <rect x="32" y="25" width="4" height="3" fill="#38BDF8" />
+      <rect x="25" y="31" width="7" height="2" fill="#B55F57" />
 
-      <!-- Dark combat suit. -->
-      <rect x="14" y="32" width="20" height="22" fill="#172554" />
-      <rect x="18" y="34" width="12" height="7" fill="#2563EB" />
-      <rect x="4" y="34" width="10" height="8" fill="#F2C6A5" />
-      <rect x="34" y="34" width="10" height="8" fill="#F2C6A5" />
+      <!-- High-collar combat suit and forward arm. -->
+      <rect x="17" y="34" width="24" height="22" fill="#172554" />
+      <rect x="21" y="34" width="16" height="7" fill="#1E3A8A" />
+      <rect x="24" y="34" width="10" height="4" fill="#60A5FA" />
+      <rect x="38" y="36" width="12" height="7" fill="#1E3A8A" />
+      <rect x="48" y="38" width="8" height="5" fill="#F5C9A8" />
+      <rect x="53" y="42" width="10" height="3" fill="#94A3B8" />
+      <rect x="61" y="40" width="4" height="7" fill="#475569" />
 
-      <!-- White cloak with red flame trim. -->
-      <rect x="6" y="32" width="8" height="21" fill="#F8FAFC" />
-      <rect x="34" y="32" width="8" height="21" fill="#F8FAFC" />
-      <rect x="2" y="39" width="8" height="17" fill="#E2E8F0" />
-      <rect x="38" y="39" width="8" height="17" fill="#E2E8F0" />
-      <rect x="2" y="52" width="8" height="5" fill="#EF4444" />
-      <rect x="10" y="49" width="6" height="8" fill="#F87171" />
-      <rect x="32" y="49" width="6" height="8" fill="#F87171" />
-      <rect x="38" y="52" width="8" height="5" fill="#EF4444" />
+      <!-- Wind-swept Hokage cloak with flame hem. -->
+      <rect x="7" y="34" width="12" height="8" fill="#FFFFFF" />
+      <rect x="1" y="39" width="18" height="8" fill="#F8FAFC" />
+      <rect x="-6" y="45" width="25" height="8" fill="#E2E8F0" />
+      <rect x="-11" y="51" width="16" height="7" fill="#F8FAFC" />
+      <rect x="5" y="51" width="14" height="7" fill="#E2E8F0" />
+      <rect x="-11" y="56" width="7" height="4" fill="#DC2626" />
+      <rect x="-4" y="53" width="7" height="7" fill="#EF4444" />
+      <rect x="3" y="56" width="8" height="4" fill="#F87171" />
+      <rect x="11" y="52" width="8" height="8" fill="#DC2626" />
 
-      <!-- Running legs and boots. -->
-      <rect x="13" y="53" width="8" height="10" fill="#1E3A8A" />
-      <rect x="27" y="53" width="8" height="7" fill="#1E3A8A" />
-      <rect x="8" y="61" width="13" height="5" fill="#0F172A" />
-      <rect x="27" y="59" width="13" height="5" fill="#0F172A" />
-      <rect x="42" y="38" width="9" height="3" fill="#94A3B8" />
-      <rect x="49" y="36" width="4" height="7" fill="#475569" />
+      <!-- Strong running silhouette. -->
+      <rect x="18" y="53" width="10" height="10" fill="#1E3A8A" />
+      <rect x="34" y="53" width="9" height="7" fill="#1E40AF" />
+      <rect x="11" y="61" width="17" height="5" fill="#0F172A" />
+      <rect x="34" y="58" width="16" height="5" fill="#0F172A" />
+      <rect x="8" y="64" width="8" height="3" fill="#334155" />
+      <rect x="46" y="61" width="8" height="3" fill="#334155" />
     </g>
   </g>
 
-  <g class="pixel-anime" transform="translate(890 218)" aria-label="Original pixel-style anime engineer">
-    <title>Original anime engineer pixel sprite</title>
+  <g class="pixel-anime" transform="translate(890 218)" aria-label="Original adult pixel-style anime heroine in a summer battle outfit">
+    <title>Original adult anime heroine — summer battle outfit pixel sprite</title>
     <g class="pixel-bob" shape-rendering="crispEdges">
+      <!-- Neon motion ribbons. -->
       <g class="pixel-spark">
-        <rect x="48" y="16" width="10" height="4" fill="#E879F9" />
-        <rect x="54" y="28" width="13" height="4" fill="#22D3EE" />
-        <rect x="46" y="39" width="8" height="4" fill="#A78BFA" />
-        <rect x="62" y="8" width="5" height="5" fill="#F0ABFC" />
+        <rect x="48" y="13" width="13" height="4" fill="#F0ABFC" />
+        <rect x="55" y="24" width="18" height="4" fill="#22D3EE" />
+        <rect x="50" y="38" width="14" height="4" fill="#A78BFA" />
+        <rect x="65" y="6" width="6" height="6" fill="#F472B6" />
+        <rect x="69" y="47" width="6" height="4" fill="#67E8F9" />
       </g>
 
-      <!-- Long purple hair. -->
-      <rect x="12" y="3" width="24" height="5" fill="#C084FC" />
-      <rect x="8" y="7" width="32" height="12" fill="#9333EA" />
-      <rect x="6" y="15" width="10" height="25" fill="#7E22CE" />
-      <rect x="34" y="13" width="10" height="31" fill="#A855F7" />
-      <rect x="40" y="22" width="8" height="26" fill="#6D28D9" />
-      <rect x="4" y="33" width="8" height="13" fill="#581C87" />
+      <!-- Glossy violet hair, flower clip and flowing ponytail. -->
+      <rect x="14" y="2" width="22" height="5" fill="#E9D5FF" />
+      <rect x="9" y="6" width="32" height="10" fill="#C084FC" />
+      <rect x="6" y="12" width="38" height="10" fill="#9333EA" />
+      <rect x="5" y="18" width="10" height="22" fill="#7E22CE" />
+      <rect x="37" y="16" width="11" height="26" fill="#A855F7" />
+      <rect x="44" y="23" width="9" height="25" fill="#6D28D9" />
+      <rect x="49" y="34" width="9" height="17" fill="#581C87" />
+      <rect x="31" y="7" width="5" height="5" fill="#F472B6" />
+      <rect x="28" y="10" width="11" height="3" fill="#F9A8D4" />
 
-      <!-- Face and cyan eye. -->
-      <rect x="12" y="16" width="24" height="16" fill="#F4C7B5" />
-      <rect x="10" y="18" width="4" height="9" fill="#E9AFA0" />
-      <rect x="15" y="21" width="5" height="3" fill="#22D3EE" />
-      <rect x="27" y="21" width="5" height="3" fill="#38BDF8" />
-      <rect x="20" y="28" width="7" height="2" fill="#D9778B" />
+      <!-- Soft face, bright eyes and smile. -->
+      <rect x="12" y="17" width="27" height="16" fill="#F7CFC1" />
+      <rect x="10" y="20" width="4" height="9" fill="#EFB6A7" />
+      <rect x="15" y="21" width="7" height="2" fill="#4C1D95" />
+      <rect x="29" y="21" width="7" height="2" fill="#4C1D95" />
+      <rect x="17" y="22" width="4" height="4" fill="#22D3EE" />
+      <rect x="30" y="22" width="4" height="4" fill="#67E8F9" />
+      <rect x="18" y="22" width="2" height="2" fill="#ECFEFF" />
+      <rect x="31" y="22" width="2" height="2" fill="#ECFEFF" />
+      <rect x="23" y="29" width="8" height="2" fill="#E05E83" />
+      <rect x="25" y="31" width="4" height="2" fill="#F9A8D4" />
 
-      <!-- Cropped tech jacket and dark skirt. -->
-      <rect x="10" y="32" width="28" height="17" fill="#0E7490" />
-      <rect x="14" y="34" width="20" height="12" fill="#22D3EE" />
-      <rect x="18" y="34" width="12" height="12" fill="#0F172A" />
-      <rect x="6" y="34" width="6" height="15" fill="#67E8F9" />
-      <rect x="38" y="34" width="6" height="15" fill="#67E8F9" />
-      <rect x="12" y="49" width="26" height="9" fill="#581C87" />
-      <rect x="16" y="49" width="5" height="9" fill="#C084FC" />
-      <rect x="29" y="49" width="5" height="9" fill="#C084FC" />
+      <!-- Breezy off-shoulder crop top, bare midriff and shorts. -->
+      <rect x="12" y="35" width="6" height="5" fill="#F7CFC1" />
+      <rect x="36" y="35" width="6" height="5" fill="#F7CFC1" />
+      <rect x="16" y="34" width="22" height="12" fill="#0F172A" />
+      <rect x="20" y="34" width="14" height="4" fill="#F472B6" />
+      <rect x="18" y="38" width="18" height="6" fill="#7C3AED" />
+      <rect x="22" y="38" width="10" height="3" fill="#C4B5FD" />
+      <rect x="19" y="45" width="16" height="6" fill="#F7CFC1" />
+      <rect x="24" y="46" width="6" height="2" fill="#EFAF9C" />
+      <rect x="13" y="50" width="28" height="9" fill="#312E81" />
+      <rect x="16" y="50" width="22" height="3" fill="#22D3EE" />
+      <rect x="25" y="52" width="4" height="7" fill="#A78BFA" />
 
-      <!-- Running legs and boots. -->
-      <rect x="13" y="57" width="8" height="8" fill="#F4C7B5" />
-      <rect x="29" y="57" width="8" height="6" fill="#F4C7B5" />
-      <rect x="8" y="63" width="13" height="5" fill="#312E81" />
-      <rect x="29" y="61" width="13" height="5" fill="#312E81" />
+      <!-- Bare arms, long legs, thigh strap and ankle boots. -->
+      <rect x="8" y="38" width="7" height="14" fill="#F7CFC1" />
+      <rect x="39" y="38" width="7" height="13" fill="#F7CFC1" />
+      <rect x="6" y="49" width="6" height="5" fill="#EFAF9C" />
+      <rect x="43" y="48" width="6" height="5" fill="#EFAF9C" />
+      <rect x="15" y="58" width="9" height="8" fill="#F7CFC1" />
+      <rect x="31" y="58" width="9" height="6" fill="#F7CFC1" />
+      <rect x="15" y="59" width="9" height="3" fill="#E879F9" />
+      <rect x="10" y="64" width="14" height="5" fill="#4C1D95" />
+      <rect x="31" y="62" width="15" height="5" fill="#4C1D95" />
+      <rect x="8" y="67" width="8" height="3" fill="#A78BFA" />
+      <rect x="42" y="65" width="8" height="3" fill="#A78BFA" />
 
-      <!-- Tiny floating terminal companion. -->
-      <rect x="-10" y="27" width="14" height="11" rx="2" fill="#111827" stroke="#22D3EE" stroke-width="2" />
-      <rect x="-7" y="30" width="5" height="2" fill="#A78BFA" />
-      <rect x="-7" y="34" width="8" height="2" fill="#22D3EE" />
+      <!-- Tiny floating holographic terminal. -->
+      <rect x="-10" y="28" width="14" height="11" rx="2" fill="#111827" stroke="#22D3EE" stroke-width="2" />
+      <rect x="-7" y="31" width="5" height="2" fill="#F0ABFC" />
+      <rect x="-7" y="35" width="8" height="2" fill="#22D3EE" />
     </g>
   </g>
 
