@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="250" viewBox="0 0 580 250" role="img" aria-labelledby="title desc">
+  <title id="title">ML and computer vision</title>
+  <desc id="desc">Machine learning, gesture recognition, detection, and classification experiments.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="580" y2="250"><stop stop-color="#2A160B"/><stop offset=".55" stop-color="#23152F"/><stop offset="1" stop-color="#0F172A"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FB923C"/><stop offset="1" stop-color="#E879F9"/></linearGradient>
+  </defs>
+  <rect width="580" height="250" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="578" height="248" rx="21" fill="none" stroke="#F97316" stroke-opacity=".36"/>
+  <rect x="28" y="28" width="87" height="26" rx="13" fill="#EA580C" fill-opacity=".14" stroke="#FB923C" stroke-opacity=".55"/>
+  <text x="71.5" y="46" text-anchor="middle" fill="#FED7AA" font-size="12" font-weight="700" letter-spacing="1" font-family="Inter,Segoe UI,Arial,sans-serif">RESEARCH</text>
+  <text x="28" y="100" fill="#F8FAFC" font-size="33" font-weight="800" font-family="Inter,Segoe UI,Arial,sans-serif">ML &amp; Computer Vision</text>
+  <text x="28" y="132" fill="#CBD5E1" font-size="15" font-family="Inter,Segoe UI,Arial,sans-serif">Recognition, detection, and classification experiments.</text>
+  <g transform="translate(28 168)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" font-weight="600">
+    <rect width="72" height="25" rx="12.5" fill="#311B18" stroke="#C2410C"/><text x="36" y="17" text-anchor="middle" fill="#FED7AA">PyTorch</text>
+    <rect x="82" width="70" height="25" rx="12.5" fill="#311B18" stroke="#C2410C"/><text x="117" y="17" text-anchor="middle" fill="#FED7AA">Python</text>
+    <rect x="162" width="92" height="25" rx="12.5" fill="#2B1732" stroke="#A21CAF"/><text x="208" y="17" text-anchor="middle" fill="#F5D0FE">Jupyter</text>
+  </g>
+  <g transform="translate(410 63)" fill="none" stroke="url(#a)" stroke-width="2.2">
+    <path d="M0 32V0H32M114 32V0H82M0 82V114H32M114 82V114H82"/>
+    <rect x="28" y="26" width="60" height="60" rx="12"/>
+    <circle cx="58" cy="56" r="17"/>
+    <circle cx="58" cy="56" r="5" fill="#F0ABFC" stroke="none"/>
+    <path d="M58 39V26M58 86V73M41 56H28M88 56H75" stroke-dasharray="3 4"/>
+  </g>
+</svg>
