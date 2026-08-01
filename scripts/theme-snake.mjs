@@ -94,6 +94,35 @@ const themedSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="
     .u { display: none !important; }
     .shell-text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
     .shell-mono { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+    .pixel-minato { animation: minato-travel 12s linear infinite; }
+    .pixel-anime { animation: anime-travel 23s linear infinite; }
+    .pixel-bob { animation: pixel-bob 420ms steps(2, end) infinite; }
+    .pixel-spark { animation: pixel-spark 620ms steps(2, end) infinite; }
+    @keyframes minato-travel {
+      0% { transform: translate(150px, 218px); }
+      79% { transform: translate(1210px, 218px); }
+      79.01% { transform: translate(-84px, 218px); }
+      100% { transform: translate(150px, 218px); }
+    }
+    @keyframes anime-travel {
+      0% { transform: translate(890px, 218px); }
+      69% { transform: translate(-84px, 218px); }
+      69.01% { transform: translate(1210px, 218px); }
+      100% { transform: translate(890px, 218px); }
+    }
+    @keyframes pixel-bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    @keyframes pixel-spark {
+      0%, 100% { opacity: 0.95; }
+      50% { opacity: 0.28; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pixel-minato { animation: none; transform: translate(220px, 218px); }
+      .pixel-anime { animation: none; transform: translate(850px, 218px); }
+      .pixel-bob, .pixel-spark { animation: none; }
+    }
   </style>
 
   <rect width="1200" height="330" rx="28" fill="url(#shell-bg)" />
@@ -121,6 +150,108 @@ const themedSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="
 
   <g transform="translate(176 135)">
     ${generatedContent}
+  </g>
+
+  <g class="pixel-minato" transform="translate(150 218)" aria-label="Pixel-style yellow flash ninja">
+    <title>Minato Namikaze pixel sprite</title>
+    <g class="pixel-bob" shape-rendering="crispEdges">
+      <g class="pixel-spark" fill="#FACC15">
+        <rect x="-30" y="24" width="12" height="4" />
+        <rect x="-22" y="16" width="8" height="4" fill="#FDE047" />
+        <rect x="-18" y="34" width="10" height="4" fill="#F59E0B" />
+        <rect x="-10" y="8" width="5" height="5" fill="#FEF08A" />
+      </g>
+
+      <!-- Spiky blond hair and forehead protector. -->
+      <rect x="8" y="4" width="8" height="4" fill="#F59E0B" />
+      <rect x="16" y="0" width="8" height="5" fill="#FACC15" />
+      <rect x="24" y="3" width="8" height="4" fill="#FDE047" />
+      <rect x="32" y="6" width="8" height="5" fill="#F59E0B" />
+      <rect x="5" y="8" width="34" height="9" fill="#FACC15" />
+      <rect x="8" y="15" width="30" height="5" fill="#172554" />
+      <rect x="18" y="14" width="12" height="5" fill="#CBD5E1" />
+      <rect x="21" y="15" width="6" height="2" fill="#64748B" />
+
+      <!-- Face. -->
+      <rect x="10" y="20" width="26" height="13" fill="#F2C6A5" />
+      <rect x="8" y="21" width="4" height="8" fill="#E8AF88" />
+      <rect x="34" y="21" width="4" height="8" fill="#E8AF88" />
+      <rect x="14" y="23" width="5" height="3" fill="#38BDF8" />
+      <rect x="28" y="23" width="5" height="3" fill="#38BDF8" />
+      <rect x="20" y="29" width="7" height="2" fill="#C97C6B" />
+
+      <!-- Dark combat suit. -->
+      <rect x="14" y="32" width="20" height="22" fill="#172554" />
+      <rect x="18" y="34" width="12" height="7" fill="#2563EB" />
+      <rect x="4" y="34" width="10" height="8" fill="#F2C6A5" />
+      <rect x="34" y="34" width="10" height="8" fill="#F2C6A5" />
+
+      <!-- White cloak with red flame trim. -->
+      <rect x="6" y="32" width="8" height="21" fill="#F8FAFC" />
+      <rect x="34" y="32" width="8" height="21" fill="#F8FAFC" />
+      <rect x="2" y="39" width="8" height="17" fill="#E2E8F0" />
+      <rect x="38" y="39" width="8" height="17" fill="#E2E8F0" />
+      <rect x="2" y="52" width="8" height="5" fill="#EF4444" />
+      <rect x="10" y="49" width="6" height="8" fill="#F87171" />
+      <rect x="32" y="49" width="6" height="8" fill="#F87171" />
+      <rect x="38" y="52" width="8" height="5" fill="#EF4444" />
+
+      <!-- Running legs and boots. -->
+      <rect x="13" y="53" width="8" height="10" fill="#1E3A8A" />
+      <rect x="27" y="53" width="8" height="7" fill="#1E3A8A" />
+      <rect x="8" y="61" width="13" height="5" fill="#0F172A" />
+      <rect x="27" y="59" width="13" height="5" fill="#0F172A" />
+      <rect x="42" y="38" width="9" height="3" fill="#94A3B8" />
+      <rect x="49" y="36" width="4" height="7" fill="#475569" />
+    </g>
+  </g>
+
+  <g class="pixel-anime" transform="translate(890 218)" aria-label="Original pixel-style anime engineer">
+    <title>Original anime engineer pixel sprite</title>
+    <g class="pixel-bob" shape-rendering="crispEdges">
+      <g class="pixel-spark">
+        <rect x="48" y="16" width="10" height="4" fill="#E879F9" />
+        <rect x="54" y="28" width="13" height="4" fill="#22D3EE" />
+        <rect x="46" y="39" width="8" height="4" fill="#A78BFA" />
+        <rect x="62" y="8" width="5" height="5" fill="#F0ABFC" />
+      </g>
+
+      <!-- Long purple hair. -->
+      <rect x="12" y="3" width="24" height="5" fill="#C084FC" />
+      <rect x="8" y="7" width="32" height="12" fill="#9333EA" />
+      <rect x="6" y="15" width="10" height="25" fill="#7E22CE" />
+      <rect x="34" y="13" width="10" height="31" fill="#A855F7" />
+      <rect x="40" y="22" width="8" height="26" fill="#6D28D9" />
+      <rect x="4" y="33" width="8" height="13" fill="#581C87" />
+
+      <!-- Face and cyan eye. -->
+      <rect x="12" y="16" width="24" height="16" fill="#F4C7B5" />
+      <rect x="10" y="18" width="4" height="9" fill="#E9AFA0" />
+      <rect x="15" y="21" width="5" height="3" fill="#22D3EE" />
+      <rect x="27" y="21" width="5" height="3" fill="#38BDF8" />
+      <rect x="20" y="28" width="7" height="2" fill="#D9778B" />
+
+      <!-- Cropped tech jacket and dark skirt. -->
+      <rect x="10" y="32" width="28" height="17" fill="#0E7490" />
+      <rect x="14" y="34" width="20" height="12" fill="#22D3EE" />
+      <rect x="18" y="34" width="12" height="12" fill="#0F172A" />
+      <rect x="6" y="34" width="6" height="15" fill="#67E8F9" />
+      <rect x="38" y="34" width="6" height="15" fill="#67E8F9" />
+      <rect x="12" y="49" width="26" height="9" fill="#581C87" />
+      <rect x="16" y="49" width="5" height="9" fill="#C084FC" />
+      <rect x="29" y="49" width="5" height="9" fill="#C084FC" />
+
+      <!-- Running legs and boots. -->
+      <rect x="13" y="57" width="8" height="8" fill="#F4C7B5" />
+      <rect x="29" y="57" width="8" height="6" fill="#F4C7B5" />
+      <rect x="8" y="63" width="13" height="5" fill="#312E81" />
+      <rect x="29" y="61" width="13" height="5" fill="#312E81" />
+
+      <!-- Tiny floating terminal companion. -->
+      <rect x="-10" y="27" width="14" height="11" rx="2" fill="#111827" stroke="#22D3EE" stroke-width="2" />
+      <rect x="-7" y="30" width="5" height="2" fill="#A78BFA" />
+      <rect x="-7" y="34" width="8" height="2" fill="#22D3EE" />
+    </g>
   </g>
 
   <g class="shell-mono" transform="translate(477 286)">
