@@ -103,10 +103,15 @@
 <h2 align="center">Contribution trail / 贡献轨迹</h2>
 
 <p align="center">
+  <sub>A living contribution map in the same violet → cyan palette as this profile.</sub><br>
+  <sub>用紫罗兰到青色的轨迹，记录每一次持续构建。</sub>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" width="100%" alt="GitHub contribution snake animation" />
+    <img src="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" width="100%" alt="Violet and cyan GitHub contribution snake animation" />
   </picture>
 </p>
 
