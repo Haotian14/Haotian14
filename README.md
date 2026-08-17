@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Hart — Frontend Engineer and Systems Builder" />
+  <img src="./assets/hero.svg" width="100%" alt="Hart — frontend engineer and systems builder system atlas" />
 </p>
 
 <p align="center">
@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-  <b>你好，我是 Hart。</b>我喜欢把大胆的想法做成真正能运行的系统。<br>
-  Frontend engineer by profession; systems builder by curiosity.
+  <b>你好，我是 Hart。</b>我做前端，也把系统一路接到服务、运行时与智能体。<br>
+  Frontend by profession. Systems builder by curiosity.
 </p>
 
 <table>
@@ -35,13 +35,11 @@
   </tr>
 </table>
 
-<br>
-
-<h2 align="center">Selected work / 精选项目</h2>
+<h2 align="center">02 / Selected systems</h2>
 
 <p align="center">
-  Not just demos — projects that cross layers, solve real engineering problems, and keep teaching me something new.<br>
-  不只做界面，也深入后端、运行时、工具链与 AI Agent，把完整链路真正跑通。
+  Projects that cross layers, solve concrete engineering problems, and keep teaching me something new.<br>
+  从界面到服务，从运行时到 AI Agent，把完整链路真正跑通。
 </p>
 
 <table>
@@ -85,26 +83,22 @@
   系统整理前端基础、手写实现与工程实践，把“理解”转化为“能清楚讲出来”。
 </p>
 
-<br>
-
-<h2 align="center">How I build / 我的技术版图</h2>
+<h2 align="center">03 / Capability map</h2>
 
 <p align="center">
-  I care about the whole path: <b>interface → service → runtime → automation</b>.<br>
-  我关心的不只是某个框架，而是产品从交互、服务到系统运行的完整路径。
+  The toolbox changes; the build path stays: <b>interface → service → runtime → agent</b>.<br>
+  技术会迭代，但我始终关心产品从交互、服务到系统运行的完整路径。
 </p>
 
 <p align="center">
   <img src="./assets/stack.svg" width="100%" alt="Languages, frontend technologies, systems, and AI tools" />
 </p>
 
-<br>
-
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" width="100%" alt="Violet and cyan GitHub contribution snake animation" />
+    <img src="https://raw.githubusercontent.com/Haotian14/Haotian14/output/github-snake.svg" width="100%" alt="GitHub contribution activity log" />
   </picture>
 </p>
 

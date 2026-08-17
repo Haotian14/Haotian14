@@ -1,24 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="580" height="250" viewBox="0 0 580 250" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="240" viewBox="0 0 580 240" role="img" aria-labelledby="title desc">
   <title id="title">Medical supply chain</title>
-  <desc id="desc">A blockchain medical supply-chain platform.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="580" y2="250"><stop stop-color="#08251E"/><stop offset="1" stop-color="#0F172A"/></linearGradient>
-    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#34D399"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient>
-  </defs>
-  <rect width="580" height="250" rx="22" fill="url(#bg)"/>
-  <rect x="1" y="1" width="578" height="248" rx="21" fill="none" stroke="#10B981" stroke-opacity=".4"/>
-  <rect x="28" y="28" width="91" height="26" rx="13" fill="#059669" fill-opacity=".16" stroke="#34D399" stroke-opacity=".55"/>
-  <text x="73.5" y="46" text-anchor="middle" fill="#A7F3D0" font-size="12" font-weight="700" letter-spacing="1" font-family="Inter,Segoe UI,Arial,sans-serif">FULL STACK</text>
-  <text x="28" y="98" fill="#F8FAFC" font-size="31" font-weight="800" font-family="Inter,Segoe UI,Arial,sans-serif">Medical Supply Chain</text>
-  <text x="28" y="130" fill="#CBD5E1" font-size="15" font-family="Inter,Segoe UI,Arial,sans-serif">Traceable logistics backed by Hyperledger Fabric.</text>
-  <g transform="translate(28 168)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" font-weight="600">
-    <rect width="62" height="25" rx="12.5" fill="#0C2F28" stroke="#047857"/><text x="31" y="17" text-anchor="middle" fill="#A7F3D0">React</text>
-    <rect x="72" width="92" height="25" rx="12.5" fill="#0C2F28" stroke="#047857"/><text x="118" y="17" text-anchor="middle" fill="#A7F3D0">Spring Boot</text>
-    <rect x="174" width="80" height="25" rx="12.5" fill="#0C2F28" stroke="#047857"/><text x="214" y="17" text-anchor="middle" fill="#A7F3D0">Fabric</text>
+  <desc id="desc">An indexed engineering card for a traceable medical logistics platform.</desc>
+  <rect width="580" height="240" rx="12" fill="#090D0C"/>
+  <rect x="1" y="1" width="578" height="238" rx="11" fill="none" stroke="#36433F"/>
+  <path d="M1 12Q1 1 12 1H208" fill="none" stroke="#7FC99B" stroke-width="2"/>
+  <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace">
+    <text x="28" y="38" fill="#F0B45A" font-size="11" font-weight="700" letter-spacing="1.8">03 / FULL STACK</text>
+    <line x1="28" y1="53" x2="326" y2="53" stroke="#34403C"/>
+    <text x="28" y="101" fill="#F4F0E6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="29" font-weight="800">Medical Supply Chain</text>
+    <text x="28" y="130" fill="#AAB5B0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Traceable logistics backed by Hyperledger Fabric.</text>
+    <line x1="28" y1="169" x2="326" y2="169" stroke="#34403C"/>
+    <text x="28" y="194" fill="#71807B" font-size="10" letter-spacing="1.2">STACK</text>
+    <text x="80" y="194" fill="#D8D2C7" font-size="11" font-weight="700">REACT  ·  SPRING BOOT  ·  FABRIC</text>
+    <text x="28" y="218" fill="#71807B" font-size="9" letter-spacing="1.1">SOURCE → TRANSIT → VERIFICATION</text>
+
+    <g transform="translate(376 58)">
+      <text y="-9" fill="#71807B" font-size="9" letter-spacing="1.2">TRACE LEDGER</text>
+      <path d="M16 26L48 8 80 26V62L48 80 16 62ZM96 26L128 8 160 26V62L128 80 96 62ZM56 100L88 82 120 100V136L88 154 56 136Z" fill="#0E1715" stroke="#7FC99B"/>
+      <path d="M80 44H96M68 72L80 88M108 72L96 88" fill="none" stroke="#596661" stroke-dasharray="3 4"/>
+      <circle cx="48" cy="44" r="4" fill="#5ECFC0"/>
+      <circle cx="128" cy="44" r="4" fill="#F0B45A"/>
+      <circle cx="88" cy="118" r="4" fill="#7FC99B"/>
+    </g>
   </g>
-  <g transform="translate(406 57)" fill="none" stroke="url(#a)" stroke-width="2.2">
-    <path d="M42 19L70 3 98 19V51L70 67 42 51ZM6 82L34 66 62 82V114L34 130 6 114ZM78 82L106 66 134 82V114L106 130 78 114Z"/>
-    <path d="M70 67V84M61 98H79" stroke-dasharray="4 4"/>
-  </g>
-  <g fill="#6EE7B7"><circle cx="476" cy="76" r="4"/><circle cx="440" cy="155" r="4"/><circle cx="512" cy="155" r="4"/></g>
 </svg>

@@ -1,0 +1,12 @@
+{
+  "name": "haotian14-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check scripts/build-snake.mjs && node --check scripts/theme-snake.mjs",
+    "test": "npm run check && node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

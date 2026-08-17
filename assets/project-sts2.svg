@@ -1,29 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="580" height="250" viewBox="0 0 580 250" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="240" viewBox="0 0 580 240" role="img" aria-labelledby="title desc">
   <title id="title">sts2-mcp</title>
-  <desc id="desc">AI game automation through MCP, C++, C sharp, and Python.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="580" y2="250"><stop stop-color="#18102F"/><stop offset="1" stop-color="#071B28"/></linearGradient>
-    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A78BFA"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
-    <radialGradient id="g"><stop stop-color="#8B5CF6" stop-opacity=".36"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
-  </defs>
-  <rect width="580" height="250" rx="22" fill="url(#bg)"/>
-  <circle cx="492" cy="60" r="130" fill="url(#g)"/>
-  <rect x="1" y="1" width="578" height="248" rx="21" fill="none" stroke="#8B5CF6" stroke-opacity=".4"/>
-  <rect x="28" y="28" width="70" height="26" rx="13" fill="#8B5CF6" fill-opacity=".22" stroke="#A78BFA" stroke-opacity=".6"/>
-  <text x="63" y="46" text-anchor="middle" fill="#DDD6FE" font-size="12" font-weight="700" letter-spacing="1" font-family="Inter,Segoe UI,Arial,sans-serif">FLAGSHIP</text>
-  <text x="28" y="100" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Inter,Segoe UI,Arial,sans-serif">sts2-mcp</text>
-  <text x="28" y="132" fill="#CBD5E1" font-size="15" font-family="Inter,Segoe UI,Arial,sans-serif">AI reads, reasons, and plays through MCP.</text>
-  <g transform="translate(28 168)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" font-weight="600">
-    <rect width="50" height="25" rx="12.5" fill="#22183F" stroke="#6D5EF5"/><text x="25" y="17" text-anchor="middle" fill="#C4B5FD">C++</text>
-    <rect x="60" width="50" height="25" rx="12.5" fill="#22183F" stroke="#6D5EF5"/><text x="85" y="17" text-anchor="middle" fill="#C4B5FD">C#</text>
-    <rect x="120" width="72" height="25" rx="12.5" fill="#102A37" stroke="#0E7490"/><text x="156" y="17" text-anchor="middle" fill="#A5F3FC">Python</text>
-    <rect x="202" width="52" height="25" rx="12.5" fill="#102A37" stroke="#0E7490"/><text x="228" y="17" text-anchor="middle" fill="#A5F3FC">MCP</text>
+  <desc id="desc">An indexed engineering card for AI game automation through MCP.</desc>
+  <rect width="580" height="240" rx="12" fill="#090D0C"/>
+  <rect x="1" y="1" width="578" height="238" rx="11" fill="none" stroke="#36433F"/>
+  <path d="M1 12Q1 1 12 1H208" fill="none" stroke="#5ECFC0" stroke-width="2"/>
+  <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace">
+    <text x="28" y="38" fill="#F0B45A" font-size="11" font-weight="700" letter-spacing="1.8">01 / FLAGSHIP</text>
+    <line x1="28" y1="53" x2="326" y2="53" stroke="#34403C"/>
+    <text x="28" y="101" fill="#F4F0E6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" font-weight="800">sts2-mcp</text>
+    <text x="28" y="130" fill="#AAB5B0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">AI reads game state, reasons, and acts through MCP.</text>
+    <line x1="28" y1="169" x2="326" y2="169" stroke="#34403C"/>
+    <text x="28" y="194" fill="#71807B" font-size="10" letter-spacing="1.2">STACK</text>
+    <text x="80" y="194" fill="#D8D2C7" font-size="11" font-weight="700">C++  ·  C#  ·  PYTHON  ·  MCP</text>
+    <text x="28" y="218" fill="#71807B" font-size="9" letter-spacing="1.1">CORECLR PROFILER → IN-PROCESS BRIDGE → AGENT</text>
+
+    <g transform="translate(370 73)">
+      <text x="0" y="-24" fill="#71807B" font-size="9" letter-spacing="1.2">EXECUTION ROUTE</text>
+      <path d="M18 34H62M88 34H132M158 34H176" stroke="#596661"/>
+      <rect y="18" width="36" height="32" rx="4" fill="#0E1715" stroke="#D8D2C7"/>
+      <rect x="70" y="18" width="36" height="32" rx="4" fill="#0E1715" stroke="#D8D2C7"/>
+      <rect x="140" y="18" width="36" height="32" rx="4" fill="#0E1715" stroke="#D8D2C7"/>
+      <circle cx="18" cy="34" r="4" fill="#5ECFC0"/>
+      <circle cx="88" cy="34" r="4" fill="#5ECFC0"/>
+      <circle cx="158" cy="34" r="4" fill="#F0B45A"/>
+      <text x="18" y="72" text-anchor="middle" fill="#82908B" font-size="8">CORE</text>
+      <text x="88" y="72" text-anchor="middle" fill="#82908B" font-size="8">BRIDGE</text>
+      <text x="158" y="72" text-anchor="middle" fill="#82908B" font-size="8">AGENT</text>
+      <path d="M18 94V114H158V94" fill="none" stroke="#5ECFC0" stroke-dasharray="3 4"/>
+    </g>
   </g>
-  <g transform="translate(408 87)" fill="none" stroke="url(#a)" stroke-width="2.4">
-    <circle cx="58" cy="40" r="38"/>
-    <circle cx="58" cy="40" r="16"/>
-    <path d="M58 2V-18M58 98V78M20 40H0M116 40H96M31 13L16-2M100 82L85 67M31 67L14 84M101-3L84 14"/>
-  </g>
-  <g fill="#C4B5FD"><circle cx="466" cy="69" r="5"/><circle cx="466" cy="165" r="5"/><circle cx="408" cy="127" r="5"/></g>
-  <circle cx="524" cy="127" r="5" fill="#22D3EE"/>
 </svg>
