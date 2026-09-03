@@ -3,41 +3,75 @@ import { readFileSync } from "node:fs";
 import { test } from "node:test";
 
 import { normaliseCalendar } from "../scripts/contributions.mjs";
-import {
-  planGrowth,
-  renderContributionSnake,
-  serpentinePath,
-} from "../scripts/snake.mjs";
+import { planGrowth, planRoute, renderContributionSnake } from "../scripts/snake.mjs";
 
 const calendar = JSON.parse(
   readFileSync(new URL("./fixtures/calendar-sample.json", import.meta.url), "utf8"),
 );
 
-test("walks every real day and skips the padding at both ends of the year", () => {
-  const path = serpentinePath(calendar.weeks);
-  const days = calendar.weeks.flat().filter((level) => level !== null);
+test("never jumps: every step moves exactly one cell", () => {
+  const { route } = planRoute(calendar.weeks);
 
-  assert.equal(path.length, days.length);
-  assert.equal(new Set(path.map((cell) => `${cell.column}:${cell.row}`)).size, path.length);
-});
+  for (let index = 1; index < route.length; index += 1) {
+    const distance =
+      Math.abs(route[index].column - route[index - 1].column) +
+      Math.abs(route[index].row - route[index - 1].row);
 
-test("never jumps: every step lands on a touching cell", () => {
-  const path = serpentinePath(calendar.weeks);
-
-  for (let index = 1; index < path.length; index += 1) {
-    const columns = Math.abs(path[index].column - path[index - 1].column);
-    const rows = Math.abs(path[index].row - path[index - 1].row);
-
-    assert.ok(
-      columns <= 1 && rows <= 1 && columns + rows > 0,
-      `step ${index} moved ${columns} columns and ${rows} rows`,
-    );
+    assert.equal(distance, 1, `step ${index} moved ${distance} cells`);
   }
 });
 
+test("stays on the calendar", () => {
+  const { route } = planRoute(calendar.weeks);
+
+  for (const cell of route) {
+    assert.ok(cell.column >= 0 && cell.column < calendar.weeks.length, "column in range");
+    assert.ok(cell.row >= 0 && cell.row < 7, "row in range");
+  }
+});
+
+test("hunts the contributed days rather than sweeping the grid", () => {
+  const { route, eatenAt, filledCount, uneaten } = planRoute(calendar.weeks);
+
+  assert.equal(uneaten, 0, "every contribution should be eaten");
+  assert.equal(eatenAt.size, filledCount);
+
+  // A tidy row-by-row sweep would visit all 366 days in order. Roaming costs
+  // extra steps crossing empty weeks, and never walks the whole grid in rows.
+  assert.ok(route.length > filledCount, "roaming takes more steps than there are meals");
+
+  const turns = route.filter((cell, index) => {
+    if (index < 2) return false;
+    const before = route[index - 2];
+    const middle = route[index - 1];
+    return (
+      (cell.column - middle.column !== middle.column - before.column) ||
+      (cell.row - middle.row !== middle.row - before.row)
+    );
+  });
+
+  assert.ok(turns.length > 40, `expected a wandering route, saw ${turns.length} turns`);
+});
+
+test("is reproducible: same calendar and seed, same route", () => {
+  const first = planRoute(calendar.weeks, { seed: 7 });
+  const second = planRoute(calendar.weeks, { seed: 7 });
+  const other = planRoute(calendar.weeks, { seed: 8 });
+
+  assert.deepEqual(first.route, second.route);
+  assert.notDeepEqual(first.route, other.route);
+});
+
+test("stops at its step budget instead of running forever", () => {
+  const { route, uneaten } = planRoute(calendar.weeks, { maxSteps: 60 });
+
+  assert.ok(route.length <= 62, `route ran to ${route.length} steps`);
+  assert.ok(uneaten > 0, "a clipped route leaves cells behind");
+});
+
 test("grows one segment per meal, in the order they are eaten", () => {
-  const path = serpentinePath(calendar.weeks);
-  const { length, births, stride } = planGrowth(path, { maxLength: 18 });
+  const { eatenAt } = planRoute(calendar.weeks);
+  const { length, births, stride } = planGrowth(eatenAt, { maxLength: 18 });
 
   assert.equal(length, 18);
   assert.equal(births[0], 0);
@@ -45,7 +79,6 @@ test("grows one segment per meal, in the order they are eaten", () => {
 
   for (let index = 1; index < births.length; index += 1) {
     assert.ok(births[index] > births[index - 1], "segments must appear in order");
-    assert.ok(path[births[index]].level > 0, "a segment is only born on a meal");
   }
 });
 
@@ -54,15 +87,16 @@ test("never grows past the number of cells there are to eat", () => {
     [0, 0, 1, 0, 0, 0, 0],
     [0, 0, 0, 0, 2, 0, 0],
   ];
-  const { length, feedCount } = planGrowth(serpentinePath(sparse), { maxLength: 18 });
+  const { eatenAt } = planRoute(sparse, { seed: 1 });
+  const { length, mealCount } = planGrowth(eatenAt, { maxLength: 18 });
 
-  assert.equal(feedCount, 2);
+  assert.equal(mealCount, 2);
   assert.equal(length, 3);
 });
 
 test("renders an animated panel in both themes", () => {
   for (const themeName of ["light", "dark"]) {
-    const svg = renderContributionSnake({ ...calendar, themeName });
+    const svg = renderContributionSnake({ ...calendar, themeName, seed: 3 });
 
     assert.match(svg, /^<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
     assert.match(svg, /<\/svg>\s*$/);
