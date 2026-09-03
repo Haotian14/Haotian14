@@ -3,8 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check scripts/build-snake.mjs && node --check scripts/theme-snake.mjs",
-    "test": "npm run check && node --test"
+    "check": "node --check scripts/palette.mjs && node --check scripts/profile-cards.mjs && node --check scripts/build-cards.mjs && node --check scripts/snake.mjs && node --check scripts/contributions.mjs && node --check scripts/build-snake.mjs",
+    "test": "npm run check && node --test",
+    "assets": "node scripts/build-cards.mjs",
+    "snake": "node scripts/build-snake.mjs dist test/fixtures/calendar-sample.json"
   },
   "engines": {
     "node": ">=20"

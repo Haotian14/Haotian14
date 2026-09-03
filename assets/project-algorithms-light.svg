@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="250" viewBox="0 0 580 250" role="img" aria-labelledby="card-algorithms card-algorithms-desc">
+  <title id="card-algorithms">Algorithm Interview Handbook</title>
+  <desc id="card-algorithms-desc">machine learning project card for Algorithm Interview Handbook.</desc>
+
+  <rect width="580" height="250" rx="14" fill="#F4F2EB" />
+  <rect x="0.75" y="0.75" width="578.5" height="248.5" rx="13.25" fill="none" stroke="#191917" stroke-opacity="0.14" />
+  <path d="M0.75 14Q0.75 0.75 14 0.75H214" fill="none" stroke="#CC785C" stroke-width="2" />
+
+  <text x="32" y="46" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="2" fill="#A8492A">03 / MACHINE LEARNING</text>
+  <text x="548" y="56" text-anchor="end" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-size="46" fill="#7C7A71" fill-opacity="0.26">03</text>
+  <text x="32" y="96" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-size="26" fill="#191917">Algorithm Interview Handbook</text>
+    <text x="32" y="136" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#45433C">17 chapters and 201 high-frequency review questions</text>
+    <text x="32" y="157" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#45433C">with runnable implementations across LLMs, recsys,</text>
+    <text x="32" y="178" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#45433C">computer vision, ML and system design.</text>
+    <g transform="translate(32 198)">
+      <rect width="43" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="21.5" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">LLM</text>
+    </g>
+    <g transform="translate(85 198)">
+      <rect width="125" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="62.5" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">Machine Learning</text>
+    </g>
+    <g transform="translate(220 198)">
+      <rect width="87" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="43.5" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">Algorithms</text>
+    </g>
+    <g transform="translate(317 198)">
+      <rect width="87" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="43.5" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">Static Web</text>
+    </g>
+</svg>

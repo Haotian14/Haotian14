@@ -1,4 +1,4 @@
-name: Generate Themed Contribution Snake
+name: Generate Contribution Snake
 
 on:
   schedule:
@@ -29,21 +29,15 @@ jobs:
         with:
           node-version: 20
 
-      - name: Verify the SVG generator
+      - name: Verify the generators
         run: npm test
 
-      - name: Generate contribution activity SVGs
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            tmp/github-snake.svg?palette=github-light&color_snake=#B76D17&color_dots=#ECE9E0,#C8E6DF,#82CFC1,#2D9C8F,#087F75
-            tmp/github-snake-dark.svg?palette=github-dark&color_snake=#F0B45A&color_dots=#151B19,#183B36,#21675F,#36998D,#5ECFC0
-
-      - name: Build the custom contribution panels
-        run: |
-          node scripts/build-snake.mjs tmp/github-snake.svg dist/github-snake.svg light
-          node scripts/build-snake.mjs tmp/github-snake-dark.svg dist/github-snake-dark.svg dark
+      # On failure the previously published panels stay on the output branch,
+      # so the README keeps rendering the last good version.
+      - name: Build the animated contribution panels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/build-snake.mjs dist
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4

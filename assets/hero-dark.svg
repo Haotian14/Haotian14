@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="hero hero-desc">
+  <title id="hero">Haotian Luo — I build interfaces that make complex feel clear</title>
+  <desc id="hero-desc">Profile banner for Haotian Luo, frontend engineer, matching the portfolio at haotian14.github.io/Portfolio.</desc>
+  <defs>
+    <pattern id="hero-grain" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#F2EFE5" stroke-opacity="0.055" />
+    </pattern>
+    <radialGradient id="hero-glow" cx="80%" cy="16%" r="48%">
+      <stop offset="0%" stop-color="#EAA88B" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#EAA88B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="430" rx="18" fill="#16150F" />
+  <rect width="1200" height="430" rx="18" fill="url(#hero-grain)" />
+  <rect x="0.75" y="0.75" width="1198.5" height="428.5" rx="17.25" fill="none" stroke="#F2EFE5" stroke-opacity="0.15" />
+  <rect width="1200" height="430" rx="18" fill="url(#hero-glow)" />
+
+  <circle cx="76" cy="72" r="4.5" fill="#EAA88B" />
+  <text x="92" y="76" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11.5" letter-spacing="2.4" fill="#E29070">FRONTEND ENGINEER · INDEPENDENT BUILDER</text>
+  <text x="1128" y="76" text-anchor="end" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#918D80">01 / PROFILE</text>
+
+  <g font-family="Newsreader, Iowan Old Style, Georgia, serif" font-size="54" fill="#F2EFE5">
+    <text x="72" y="164">I build interfaces</text>
+    <text x="72" y="226">that make <tspan font-style="italic" fill="#E29070">complex</tspan></text>
+    <text x="72" y="288">feel clear.</text>
+  </g>
+
+    <text x="72" y="332" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14.5" fill="#CAC6B8">Haotian Luo — a UNSW Computer Science and Information Technology</text>
+    <text x="72" y="354" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14.5" fill="#CAC6B8">graduate, turning ambitious product ideas into reliable, polished</text>
+    <text x="72" y="376" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14.5" fill="#CAC6B8">web experiences.</text>
+
+  <g transform="translate(752 100)">
+    <rect width="376" height="222" rx="16" fill="#1E1D16" stroke="#F2EFE5" stroke-opacity="0.15" />
+    <rect x="28" y="28" width="94" height="94" rx="14" fill="#100F0A" stroke="#F2EFE5" stroke-opacity="0.15" />
+    <text x="75" y="90" text-anchor="middle" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-size="38" fill="#E29070">HL.</text>
+    <text x="142" y="54" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="2" fill="#918D80">SYD / CN</text>
+    <text x="142" y="82" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#CAC6B8">Based between product</text>
+    <text x="142" y="102" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#CAC6B8">thinking and frontend</text>
+    <text x="142" y="122" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#CAC6B8">engineering.</text>
+    <g transform="translate(28 156)">
+      <rect width="320" height="38" rx="19" fill="none" stroke="#EAA88B" stroke-opacity="0.45" />
+      <circle cx="22" cy="19" r="4" fill="#EAA88B" />
+      <text x="38" y="23" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="0.9" fill="#E29070">Open to meaningful collaborations</text>
+    </g>
+  </g>
+
+  <line x1="72" y1="392" x2="1128" y2="392" stroke="#F2EFE5" stroke-opacity="0.15" />
+  <text x="72" y="412" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#918D80">React  ·  TypeScript  ·  Vue 3  ·  Design systems  ·  Interaction craft  ·  Performance  ·  Testing  ·  Accessibility</text>
+</svg>

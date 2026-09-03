@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="250" viewBox="0 0 580 250" role="img" aria-labelledby="card-poker card-poker-desc">
+  <title id="card-poker">Texas Hold&apos;em Trainer</title>
+  <desc id="card-poker-desc">product engineering project card for Texas Hold&apos;em Trainer.</desc>
+
+  <rect width="580" height="250" rx="14" fill="#F4F2EB" />
+  <rect x="0.75" y="0.75" width="578.5" height="248.5" rx="13.25" fill="none" stroke="#191917" stroke-opacity="0.14" />
+  <path d="M0.75 14Q0.75 0.75 14 0.75H214" fill="none" stroke="#CC785C" stroke-width="2" />
+
+  <text x="32" y="46" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="2" fill="#A8492A">01 / PRODUCT ENGINEERING</text>
+  <text x="548" y="56" text-anchor="end" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-size="46" fill="#7C7A71" fill-opacity="0.26">01</text>
+  <text x="32" y="96" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-size="26" fill="#191917">Texas Hold&apos;em Trainer</text>
+    <text x="32" y="136" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#45433C">A 6-max training loop with range-aware AI, replayable</text>
+    <text x="32" y="157" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#45433C">hands, EV-based reviews and long-term leak reports —</text>
+    <text x="32" y="178" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#45433C">an offline-first PWA covered by 985 automated tests.</text>
+    <g transform="translate(32 198)">
+      <rect width="56" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="28" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">React</text>
+    </g>
+    <g transform="translate(98 198)">
+      <rect width="87" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="43.5" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">TypeScript</text>
+    </g>
+    <g transform="translate(195 198)">
+      <rect width="43" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="21.5" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">PWA</text>
+    </g>
+    <g transform="translate(248 198)">
+      <rect width="87" height="26" rx="13" fill="#EAE7DB" stroke="#191917" stroke-opacity="0.14" />
+      <text x="43.5" y="17" text-anchor="middle" font-family="DM Mono, ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#45433C" letter-spacing="0.6">Playwright</text>
+    </g>
+</svg>
