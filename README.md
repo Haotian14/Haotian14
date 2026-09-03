@@ -128,10 +128,10 @@ scroll-driven chapter rail, and motion that respects `prefers-reduced-motion`.
 </p>
 
 Generated in this repository rather than by an action off the shelf: `scripts/contributions.mjs`
-reads the calendar over the GitHub GraphQL API and `scripts/snake.mjs` walks it row by row,
-growing the snake one segment per contribution and pacing that growth across the whole loop.
-Pure CSS, so it animates inside a README, and it holds still under `prefers-reduced-motion`.
-Refreshed every 12 hours.
+reads the calendar over the GitHub GraphQL API and `scripts/snake.mjs` plans the hunt — the snake
+picks a nearby day you contributed on, roams over to it, eats it, and grows one segment longer,
+with that growth paced across the whole loop. Pure CSS, so it animates inside a README, and it
+holds still under `prefers-reduced-motion`. Refreshed every 12 hours.
 
 贪吃蛇每吃掉一格贡献就长长一节，浅色深色各一版。
 
