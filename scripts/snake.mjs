@@ -32,6 +32,8 @@ const MIN_STEP_SECONDS = 0.028;
 const MAX_STEP_SECONDS = 0.09;
 /** How many of the nearest uneaten cells to choose a target from. */
 const TARGET_CHOICES = 4;
+/** Where the loop starts breathing out: the grid refills and the snake fades. */
+const LOOP_FADE = 98.5;
 /** Chance of holding the current heading for another cell. */
 const AXIS_PERSISTENCE = 0.72;
 
@@ -189,11 +191,16 @@ function cells(weeks, theme, eatenAt, steps) {
     }
 
     const eaten = (eatenStep / steps) * 100;
+    const swallowed = Math.min(eaten + 0.25, 100);
     const name = `e${day.column}_${day.row}`;
+    // Fade the calendar back in over the last stretch of the loop, so the grid
+    // refills rather than blinking the instant the animation restarts.
+    const tail =
+      swallowed < LOOP_FADE
+        ? `${percent(swallowed)},${percent(LOOP_FADE)}{fill:${theme.contributions[0]}}100%{fill:${fill}}`
+        : `${percent(swallowed)},100%{fill:${theme.contributions[0]}}`;
 
-    keyframes.push(
-      `@keyframes ${name}{0%,${percent(eaten)}{fill:${fill}}${percent(Math.min(eaten + 0.25, 100))},100%{fill:${theme.contributions[0]}}}`,
-    );
+    keyframes.push(`@keyframes ${name}{0%,${percent(eaten)}{fill:${fill}}${tail}}`);
     rects.push(
       `    <rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="4" fill="${fill}" style="animation-name:${name}" class="c" />`,
     );
@@ -202,13 +209,23 @@ function cells(weeks, theme, eatenAt, steps) {
   return { rects: rects.join("\n"), keyframes: keyframes.join("\n    ") };
 }
 
-function walkKeyframes(route, steps) {
-  const stops = route.map((cell, index) => {
-    const x = GRID_X + cell.column * PITCH;
-    const y = GRID_Y + cell.row * PITCH;
+function translateTo(cell) {
+  return `transform:translate(${GRID_X + cell.column * PITCH}px,${GRID_Y + cell.row * PITCH}px)`;
+}
 
-    return `${percent((index / steps) * 100)}{transform:translate(${x}px,${y}px)}`;
-  });
+function walkKeyframes(route, steps) {
+  const stops = route.map(
+    (cell, index) => `${percent((index / steps) * 100)}{${translateTo(cell)}}`,
+  );
+
+  /*
+    The route's last step lands just short of 100%. Without a stop *at* 100% the
+    browser interpolates the final sliver of the loop back to the element's own
+    transform — translate(0,0), the top-left corner of the panel — and every
+    segment visibly flies off to it before the loop restarts. Holding the last
+    cell through 100% keeps the snake where it stopped.
+  */
+  stops.push(`100%{${translateTo(route[route.length - 1])}}`);
 
   return `@keyframes walk{${stops.join("")}}`;
 }
@@ -225,9 +242,15 @@ function snakeSegments(theme, { length, births }, steps, duration, stepSeconds) 
     const fade = 1 - (index / Math.max(length, 2)) * 0.4;
     const delay = (index * stepSeconds).toFixed(3);
 
-    keyframes.push(
-      `@keyframes ${name}{0%,${percent(threshold)}{opacity:0}${percent(Math.min(threshold + 0.2, 100))},100%{opacity:${fade.toFixed(2)}}}`,
-    );
+    const born = Math.min(threshold + 0.2, 100);
+    // Fade out with the refilling grid so the jump back to the route's first
+    // cell happens while the snake is invisible.
+    const tail =
+      born < LOOP_FADE
+        ? `${percent(born)},${percent(LOOP_FADE)}{opacity:${fade.toFixed(2)}}100%{opacity:0}`
+        : `${percent(born)},100%{opacity:${fade.toFixed(2)}}`;
+
+    keyframes.push(`@keyframes ${name}{0%,${percent(threshold)}{opacity:0}${tail}}`);
     // Ink body on a clay grid, ringed in the panel ground so segments stay
     // legible where they overlap a busy week.
     rects.push(

@@ -142,3 +142,36 @@ test("rejects contribution levels it does not understand", () => {
     /Unknown contribution level "MAXIMUM"/,
   );
 });
+
+/*
+  Regression: the walk track used to stop at the last route step, a sliver short
+  of 100%. With no keyframe at 100% the browser interpolates the rest of the
+  loop back to the element's own transform — translate(0,0) — and the whole
+  snake flies off to the panel's top-left corner before restarting.
+*/
+test("the walk track ends where the route ends, not at the origin", () => {
+  const svg = renderContributionSnake({ ...calendar, seed: 3 });
+  const walk = svg.match(/@keyframes walk\{(.+?)\}\n/s)[1];
+  const stops = [...walk.matchAll(/([\d.]+)%\{transform:translate\((-?[\d.]+)px,(-?[\d.]+)px\)\}/g)];
+
+  const last = stops.at(-1);
+  const beforeLast = stops.at(-2);
+
+  assert.equal(last[1], "100", "the track must define a keyframe at 100%");
+  assert.deepEqual(
+    [last[2], last[3]],
+    [beforeLast[2], beforeLast[3]],
+    "100% must hold the final cell rather than drift",
+  );
+
+  for (const [, , x, y] of stops) {
+    assert.ok(Number(x) > 0 && Number(y) > 0, "no step may sit at the panel origin");
+  }
+});
+
+test("the loop breathes out: grid refills and the snake fades before restarting", () => {
+  const svg = renderContributionSnake({ ...calendar, seed: 3 });
+
+  assert.match(svg, /98\.5%\{opacity:[\d.]+\}100%\{opacity:0\}/, "segments fade out");
+  assert.match(svg, /98\.5%\{fill:#[0-9A-Fa-f]{6}\}100%\{fill:#[0-9A-Fa-f]{6}\}/, "cells refill");
+});
